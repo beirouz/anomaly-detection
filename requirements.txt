@@ -1,0 +1,1 @@
+yfinance\npandas\nmatplotlib\nrandom\nnumpy\nscikit-learn\nseaborn\nscipy\nstatsmodels\nfilterpy\ntensorflow
