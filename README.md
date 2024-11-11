@@ -33,9 +33,13 @@ The `yfinance` library was used to retrieve adjusted closing prices for the foll
 - **Machine Learning Models**: ML-based models offer the advantage of reusability across multiple data products, allowing for faster anomaly detection without repeated data analysis. However, these models often act as "black boxes," making it difficult to fully explain their behavior and results. Communicating the reasons for anomalies to data providers can be challenging and requires careful adjustment of detection thresholds, often through trial and error.
 - **Statistical Methods**: Statistical methods, while more transparent and easier to justify in terms of threshold adjustment, may not generalize well across different use cases. For instance, Z-score methods may perform poorly on datasets with heavy tails, while other methods may work better for specific distributions.
 
-## Usage
+## Files in the Repository
+- **`anomaly detection in financial data.ipynb`**: Contains the code and analysis for anomaly detection.
+- **`report.pdf`**: Detailed report documenting the methodology, results, and conclusions.
+- **`requirements.txt`**: List of dependencies for the project.
 
-### Installation
-To install the necessary dependencies:
-```bash
-pip install -r requirements.txt
+## Summary of the Results
+A detailed summary of the results and key findings can be found in [this Medium blog post](https://medium.com/@behrouzbanitalebi/balancing-statistical-and-machine-learning-approaches-for-anomaly-detection-in-financial-data-23291c3e77dc).
+
+## Acknowledgements
+This project is licensed under the MIT License. For more details, please refer to the `LICENSE` file in this repository.
