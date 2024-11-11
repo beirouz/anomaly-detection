@@ -1,38 +1,39 @@
-# Project Title
+# Anomaly Detection in Financial Data
 
-A brief description of what your project does and who it's for.
+This repository contains code and documentation related to using statistical and machine learning techniques to enhance anomaly detection in financial data. The project focuses on detecting data quality issues by analyzing stock prices from several financial institutions over a specified period.
 
-## Table of Contents
+## Project Overview
 
-- [About](#about)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+### Problem Statement
+In financial services, accurate calculation of risk statistics and other metrics relies heavily on input data quality. The project explores the use of statistical and modern machine learning approaches for effective anomaly detection.
 
-## About
+### Data Sources
+The `yfinance` library was used to retrieve adjusted closing prices for the following institutions:
+- JPMorgan Chase & Co. (JPM)
+- Goldman Sachs Group Inc. (GS)
+- Morgan Stanley (MS)
+- BlackRock Inc. (BLK)
+- Citigroup Inc. (C)
 
-Provide a more detailed description of your project. Explain what problem it solves or why it is unique.
+### Key Components
+1. **Data Preprocessing and Visualization**: Summary statistics, pair plots, and Q-Q plots are used to provide insights into data distribution and relationships.
+2. **Anomaly Detection Methods**:
+   - **Statistical Approaches**:
+     - Interquartile Range (IQR) method
+     - Rolling Median and Median Absolute Deviation (MAD)
+     - Mahalanobis Distance
+   - **Machine Learning Techniques**:
+     - Vector Autoregression (VAR)
+     - Kalman Filter
+     - K-Nearest Neighbors (KNN)
+     - Isolation Forest
+     - Autoencoder (Dense and LSTM-based models)
 
-## Getting Started
+3. **Results and Findings**: The models identified anomalies in time series data, providing insights into rare but significant deviations from expected patterns.
 
-Instructions on how to get a copy of the project up and running on your local machine for development or testing purposes.
-
-### Prerequisites
-
-List anything the user needs to have installed before using your project, such as:
-- Node.js
-- Python
-- Specific packages
+## Usage
 
 ### Installation
-
-Provide step-by-step instructions on how to install the project.
-
+To install the necessary dependencies:
 ```bash
-# Example installation command
-git clone https://github.com/your-username/your-project.git
-cd your-project
-npm install
+pip install -r requirements.txt
